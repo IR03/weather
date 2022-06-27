@@ -53,13 +53,7 @@ const CountryInformation: React.FC = () => {
 
     // console.log(countryInfo);
     // console.log(weatherInfo);
- 
 
-
-
-    useEffect(() => {
-        callCountry();
-    }, []);
 
     const callCountry = async () => {
         try {
@@ -80,6 +74,13 @@ const CountryInformation: React.FC = () => {
             console.error(err);
         }
     };
+
+    
+    useEffect(() => {
+        callCountry();
+    }, [country]);
+
+
     const callWeather = async (capital: string) => {
 
         try {

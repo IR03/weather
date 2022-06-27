@@ -59,7 +59,7 @@ const CountryInformation: React.FC = () => {
 
     useEffect(() => {
         callCountry();
-    }, [country]);
+    }, []);
 
     const callCountry = async () => {
         try {

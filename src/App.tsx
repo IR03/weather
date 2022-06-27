@@ -2,8 +2,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Search from './Pages/Search';
 import CountryInformation from './Pages/CountryInformation';
